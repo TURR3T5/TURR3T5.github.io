@@ -1,0 +1,250 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020; /* Adjust the color to match the mockup */
+    padding: 0.20rem 2rem;
+}
+
+.logo {
+    height: 50px;
+}
+
+a .logo {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav a {
+    color: #ddd; /* Light grey text, adjust if necessary */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff; /* Brighter white on hover */
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    padding: 7px 0;
+    overflow: hidden;
+}
+
+.hero-bg {
+    background-image: url('images/webbg6.png');
+    filter: blur(2px);
+    transform: scale(1.1);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    
+}
+
+.hero-logo {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-buttons {
+    text-align: center;
+    width: 100%;
+    
+}
+
+.hero-button-group {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.hero-button-group p {
+    margin: 0 0 0;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 5px 30px;
+    margin-top: 6px;
+    background: #333333;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    border: none;
+    transition: background-color 0.3s ease;
+    width: 130px;
+}
+
+.btn:hover {
+    background-color: rgb(73, 73, 73); /* Darker orange on hover */
+}
+
+.main-content {
+    background-color: #202020;
+    color: #d0cdcd;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2em 0;
+    background-color: #333;
+}
+
+.info-box {
+    flex: 1;
+    margin: 0 1em; /* Spacing between boxes */
+    padding: 1em;
+    background-color: #202020;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #ccc;
+    text-align: center; /* Center the content */
+    height: 260px;
+}
+
+.section-title {
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+.section-content {
+    color: #fff;
+}
+
+.social-links {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-link i {
+    width: 30px;
+    text-align: center;
+}
+
+.social-link span {
+    margin-left: 10px;
+}
+
+.social-link:hover {
+    color: rgb(175, 174, 174);
+}
+
+@media (max-width: 768px) {
+    .info-sections {
+        flex-direction: column; /* Stack the boxes on smaller screens */
+        align-items: center;
+    }
+
+    .info-box {
+        width: 80%; /* Adjust width on smaller screens */
+        margin-bottom: 1em; /* Spacing between stacked boxes */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-box {
+        width: 100%; /* Full width on very small screens */
+        border-radius: 0; /* No rounded corners for full-width */
+    }
+}
+
+.server-status {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    display: inline-block; /* or 'block' if you prefer */
+    margin-bottom: 1em;
+}
+
+.online {
+    background-color: #28a745; /* Green for online */
+}
+
+.offline {
+    background-color: #dc3545; /* Red for offline */
+}
+
+.content-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* White text */
+    max-width: 800px; /* Set a max-width for readability */
+    margin: 0px auto; /* Center the container */
+}
+
+.content-container h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.content-container h2 {
+    color: #d0cdcd;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.content-container p, .content-container ul {
+    text-align: left;
+    line-height: 1.6; /* Improve readability */
+}
+
+.content-container strong {
+    color: #ade0ff; /* A distinct color for key terms */
+}
