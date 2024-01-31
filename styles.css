@@ -256,7 +256,7 @@ nav a:hover {
 }
 
 .discord-invite {
-    background-color: rgb(47, 49, 54);
+    background-color: rgb(43, 45, 49);
     border: 1px solid #202020;
     border-radius: 4px;
     box-sizing: border-box;
@@ -328,7 +328,7 @@ nav a:hover {
     margin-right: 4px;
   }
   .discord-invite-online-icon {
-    background-color: rgb(67, 181, 129);
+    background-color: rgb(52, 150, 52);
   }
   .discord-invite-offline-icon {
     background-color: rgb(116, 127, 141);
@@ -336,7 +336,7 @@ nav a:hover {
   .discord-invite-join-button {
     border-radius: 3px;
     align-items: center;
-    background-color: rgb(67, 181, 129);
+    background-color: rgb(52, 150, 52);
     block-size: 40px;
     box-sizing: border-box;
     color: white;
