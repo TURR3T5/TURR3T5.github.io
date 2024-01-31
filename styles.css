@@ -157,11 +157,20 @@ nav a:hover {
 
 .join-server-button {
     position: absolute;
-    bottom: 10px; /* Adjust the position as needed */
-    left: 50%;
+    bottom: 5%; /* Adjust the position as needed */
+    left: 16.5%;
     transform: translateX(-50%);
     display: none; /* Initially hidden */
-    
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: #6E6D70;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    color: #DFDEDF;
+    text-decoration: none;
 }
 
 .info-box:hover .join-server-button {
@@ -238,6 +247,13 @@ nav a:hover {
     background-color: #dc3545;
 }
 
+.rules-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1024px; /* Adjust the width as needed */
+}
+
 .content-container {
     background-color: #333;
     padding: 10px;
@@ -269,6 +285,16 @@ nav a:hover {
 
 .content-container strong {
     color: #979393;
+}
+
+#community-guidelines {
+    background-color: #333; /* or any other color you prefer */
+    /* other styles specific to this section */
+}
+
+#roleplay-rules {
+    background-color: #444; /* a slightly different shade for distinction */
+    /* other styles specific to this section */
 }
 
 .discord-invite {
@@ -400,7 +426,6 @@ footer {
     margin: 0 auto;
     padding: 20px;
     border-bottom: 1px solid #444;
-    border-top: 1px solid #444;
 }
 
 .footer-section {
