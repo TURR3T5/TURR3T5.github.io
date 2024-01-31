@@ -151,6 +151,22 @@ nav a:hover {
     height: 260px;
 }
 
+.info-box:hover .server-info-content {
+    filter: blur(5px); /* Adjust the blur value as needed */
+}
+
+.join-server-button {
+    position: absolute;
+    bottom: 10px; /* Adjust the position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Initially hidden */
+    
+}
+
+.info-box:hover .join-server-button {
+    display: block; /* Show the button on hover */
+}
 .section-title {
     color: #fff;
     margin-bottom: 0.5em;
@@ -263,7 +279,7 @@ nav a:hover {
     height: 110px;
     padding: 16px;
     width: 432px;
-    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 14px;
     margin: 0 auto;
     
@@ -351,6 +367,20 @@ nav a:hover {
     font-size: 12px;
     margin-right: 8px;
   }
+
+.discord-server-info {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 350px; /* Adjust the height as needed */
+    padding: 10px;
+}
+
+.discord-server-info iframe {
+    border: none; /* Removes the default border */
+    border-radius: 8px; /* Optional: for rounded corners on the iframe */
+}
+
 
 *::-webkit-scrollbar {
     width: 0px;

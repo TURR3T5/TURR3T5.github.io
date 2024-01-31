@@ -3,8 +3,8 @@ async function fetchServerData() {
         const response = await fetch('http://localhost:3000/website-odessa');
         const data = await response.json();
 
-        const serverInfoContainer = document.getElementById('server-info');
-        serverInfoContainer.innerHTML = `
+        const serverInfoContent = document.querySelector('#server-info .server-info-content');
+        serverInfoContent.innerHTML = `
             <h2 class="section-title">OdessaRP [18+]</h2>
             <div class="server-status ${data.serverStatus.online ? 'online' : 'offline'}">
                 Status: ${data.serverStatus.online ? 'Online' : 'Offline'}
