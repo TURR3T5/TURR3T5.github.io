@@ -221,9 +221,10 @@ nav a:hover {
 }
 
 .content-container {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #333; /* Semi-transparent black background */
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     color: #fff; /* White text */
     max-width: 864px; /* Set a max-width for readability */
     margin: 0px auto; /* Center the container */
@@ -231,12 +232,12 @@ nav a:hover {
 
 .content-container h1 {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.7em;
 }
 
 .content-container h2 {
     color: #d0cdcd;
-    margin-top: 1em;
+    margin-top: 0.7em;
     text-align: center;
 }
 
@@ -246,11 +247,12 @@ nav a:hover {
 }
 
 .content-container strong {
-    color: #ade0ff; /* A distinct color for key terms */
+    color: #979393; /* A distinct color for key terms */
 }
 
 .discord-invite {
     background-color: rgb(47, 49, 54);
+    border: 1px solid #202020;
     border-radius: 4px;
     box-sizing: border-box;
     height: 110px;
@@ -258,6 +260,7 @@ nav a:hover {
     width: 432px;
     font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    margin: 0 auto;
     
   }
   .discord-invite-text {
