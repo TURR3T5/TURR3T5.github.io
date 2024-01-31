@@ -1,6 +1,6 @@
 async function fetchServerData() {
     try {
-        const response = await fetch('http://localhost:3000/website-odessa'); // Use the correct server URL here
+        const response = await fetch('http://localhost:3000/website-odessa');
         const data = await response.json();
 
         const serverInfoContainer = document.getElementById('server-info');
