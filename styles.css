@@ -126,7 +126,7 @@ nav a:hover {
 }
 
 .main-content {
-    background-color: #202020;
+    background-color: #181818;
     color: #d0cdcd;
 }
 
@@ -225,8 +225,6 @@ nav a:hover {
 .content-container {
     background-color: #333;
     padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     color: #fff;
     max-width: 864px;
     margin: 0px auto;
@@ -356,4 +354,107 @@ nav a:hover {
 
 *::-webkit-scrollbar {
     width: 0px;
+}
+
+footer {
+    background-color: #202020;
+    color: #d0cdcd;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+    border-right: 1px solid #444;
+}
+
+.footer-section:last-child {
+    border-right: none;
+}
+
+.about-us {
+    flex: 1.5; /* More space for About Us */
+}
+
+.contact {
+    flex: 0.75; /* Less space for Contact */
+}
+
+.footer-section h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section i {
+    font-size: 1.5rem;
+    color: #d0cdcd;
+    margin-right: 10px;
+}
+
+.footer-section a {
+    display: inline-flex;
+    align-items: center;
+    color: #d0cdcd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-section i:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+        border-right: none;
+        border-bottom: 1px solid #444;
+    }
+
+    .footer-section:last-child {
+        border-bottom: none;
+    }
+
+    .footer-bottom {
+        padding-top: 0;
+    }
 }
